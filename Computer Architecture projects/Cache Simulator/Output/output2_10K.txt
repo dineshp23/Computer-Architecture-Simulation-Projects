@@ -1,0 +1,32 @@
+cache size= : 524288  ,  block size= : 16  ,  number of ways= : 1
+number of sets= : 32768  ,  number of tag bits= : 13  ,  number of index bits= : 15  ,  number of offset bits= : 4
+Calculating Cache hit and miss rate ...
+Cache Hits: 9453  ,  Cache Miss: 547
+Total: 10000
+Cold Misses: 541  ,  Conflict Misses: 6  ,  Capacity Misses: 0
+Cache Hit rate: 94.53 %  ,  Cache Miss rate: 5.47 %
+=========================================================================
+cache size= : 524288  ,  block size= : 16  ,  number of ways= : 2
+number of sets= : 16384  ,  number of tag bits= : 14  ,  number of index bits= : 14  ,  number of offset bits= : 4
+Calculating Cache hit and miss rate ...
+Cache Hits: 9454  ,  Cache Miss: 546
+Total: 10000
+Cold Misses: 546  ,  Conflict Misses: 0  ,  Capacity Misses: 0
+Cache Hit rate: 94.54 %  ,  Cache Miss rate: 5.46 %
+=========================================================================
+cache size= : 524288  ,  block size= : 16  ,  number of ways= : 4
+number of sets= : 8192  ,  number of tag bits= : 15  ,  number of index bits= : 13  ,  number of offset bits= : 4
+Calculating Cache hit and miss rate ...
+Cache Hits: 9454  ,  Cache Miss: 546
+Total: 10000
+Cold Misses: 546  ,  Conflict Misses: 0  ,  Capacity Misses: 0
+Cache Hit rate: 94.54 %  ,  Cache Miss rate: 5.46 %
+=========================================================================
+cache size= : 524288  ,  block size= : 16  ,  number of ways= : ( Fully Set associative )32768
+number of sets= : 1  ,  number of tag bits= : 28  ,  number of index bits= : 0  ,  number of offset bits= : 4
+Calculating Cache hit and miss rate ...
+Cache Hits: 9454  ,  Cache Miss: 546
+Total: 10000
+Cold Misses: 546  ,  Conflict Misses: 0  ,  Capacity Misses: 0
+Cache Hit rate: 94.54 %  ,  Cache Miss rate: 5.46 %
+=========================================================================

@@ -1,0 +1,67 @@
+Loading application...instruction_1.txt
+Read file completed!!
+Printing Application: 
+Loop LW r5 r1
+LW r6 r2
+LW r7 r3
+SUB r8 r6 r5
+ADD r9 r8 r7
+ADD r1 r1 r10
+ADD r2 r2 r10
+ADD r3 r3 r10
+SW r9 r2
+BNEZ r4 r2
+Initializing Tomasulo...
+
+ ================== Tomasulo Output ==================
+Iteration	Instruction 			Fetch@ 	Execute@ Memory@ WrtBack@ 
+0		LW r5  r1  			1	2	 3	4
+0		LW r6  r2  			2	3	 4	5
+0		LW r7  r3  			3	4	 5	6
+0		SUB r8  r6  r5			4	7	 * 	8
+0		ADD r1  r1  r10			6	9	 * 	10
+0		ADD r9  r8  r7			5	11	 * 	12
+0		ADD r2  r2  r10			9	13	 * 	14
+0		ADD r3  r3  r10			11	15	 * 	16
+0		BNEZ   r4  r2			13	15	 * 	 *
+0		SW r9  r2  			12	15	 16	 *
+1		LW r5  r1  			14	16	 17	18
+1		LW r6  r2  			15	17	 18	19
+1		LW r7  r3  			16	18	 19	20
+1		SUB r8  r6  r5			17	21	 * 	22
+1		ADD r1  r1  r10			19	23	 * 	24
+1		ADD r9  r8  r7			18	25	 * 	26
+1		ADD r2  r2  r10			23	27	 * 	28
+1		ADD r3  r3  r10			25	29	 * 	30
+1		BNEZ   r4  r2			27	29	 * 	 *
+1		SW r9  r2  			26	29	 30	 *
+2		LW r5  r1  			28	30	 31	32
+2		LW r6  r2  			29	31	 32	33
+2		LW r7  r3  			30	32	 33	34
+2		SUB r8  r6  r5			31	35	 * 	36
+2		ADD r1  r1  r10			33	37	 * 	38
+2		ADD r9  r8  r7			32	39	 * 	40
+2		ADD r2  r2  r10			37	41	 * 	42
+2		ADD r3  r3  r10			39	43	 * 	44
+2		BNEZ   r4  r2			41	43	 * 	 *
+2		SW r9  r2  			40	43	 44	 *
+3		LW r5  r1  			42	44	 45	46
+3		LW r6  r2  			43	45	 46	47
+3		LW r7  r3  			44	46	 47	48
+3		SUB r8  r6  r5			45	49	 * 	50
+3		ADD r1  r1  r10			47	51	 * 	52
+3		ADD r9  r8  r7			46	53	 * 	54
+3		ADD r2  r2  r10			51	55	 * 	56
+3		ADD r3  r3  r10			53	57	 * 	58
+3		BNEZ   r4  r2			55	57	 * 	 *
+3		SW r9  r2  			54	57	 58	 *
+4		LW r5  r1  			56	58	 59	60
+4		LW r6  r2  			57	59	 60	61
+4		LW r7  r3  			58	60	 61	62
+4		SUB r8  r6  r5			59	63	 * 	64
+4		ADD r1  r1  r10			61	65	 * 	66
+4		ADD r9  r8  r7			60	67	 * 	68
+4		ADD r2  r2  r10			65	69	 * 	70
+4		ADD r3  r3  r10			67	71	 * 	72
+4		BNEZ   r4  r2			69	71	 * 	 *
+4		SW r9  r2  			68	71	 72	 *

@@ -1,0 +1,11 @@
+ADD r10 r1 r2
+Loop LW r5 r1
+LW r6 r2
+LW r7 r3
+SUB r8 r6 r5
+ADD r9 r8 r7
+ADD r1 r1 r10
+ADD r2 r2 r10
+ADD r3 r3 r10
+SW r9 r2
+BNEZ r4 r2
